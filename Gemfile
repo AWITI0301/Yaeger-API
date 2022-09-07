@@ -1,15 +1,23 @@
-# frozen_string_literal: true
+source 'http://rubygems.org'
 
-source "https://rubygems.org"
-
-# gem "rails"
-gem 'pry'
-gem 'rack'
-gem 'rack-test'
-gem 'rspec'
-gem 'rack-cors'
+gem 'sinatra'
+gem 'activerecord', '~> 5.2'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
+gem 'require_all'
+gem 'sqlite3'
+gem 'thin'
 gem 'shotgun'
-gem "require_all"
-gem "activerecord", "~> 5.2"
-gem "sinatra-activerecord"
-gem "sqlite3"
+gem 'pry'
+gem 'bcrypt'
+gem 'tux'
+gem 'faker'
+gem 'rack-cors'
+gem 'rack-contrib'
+gem 'dotenv'
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rack-test'
+end
