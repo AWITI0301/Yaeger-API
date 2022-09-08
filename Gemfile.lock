@@ -135,6 +135,10 @@ DEPENDENCIES
   sqlite3
   thin
   tux
+  uri
+  rerun
+  pg
+  psych (~> 4.0.0)
 
 BUNDLED WITH
    2.3.20
