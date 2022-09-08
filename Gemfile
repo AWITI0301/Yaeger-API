@@ -21,6 +21,7 @@ group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'
+end  
 
 #use pry in the development phase only
 group :development do
