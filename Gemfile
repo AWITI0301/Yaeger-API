@@ -1,27 +1,38 @@
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sinatra'
-gem 'activerecord', '~> 5.2'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
-gem 'rake'
-gem 'require_all'
-gem 'thin'
-gem 'shotgun'
-gem 'bcrypt'
-gem 'tux'
-gem 'faker'
-gem 'rack-cors'
-gem 'rack-contrib'
-gem 'dotenv'
+# A DSL for quickly creating web applications
+# https://github.com/sinatra/sinatra
+gem "sinatra"
+
+# A fast and simple web server
+# https://github.com/macournoyer/thin
+gem "thin"
+
+# Rack middleware. Used specifically for parsing the request body into params.
+# https://github.com/rack/rack-contrib
+gem "rack-contrib"
+
+# More Rack middleware! Used to handle CORS requests
+# https://github.com/cyu/rack-cors
+gem "rack-cors"
+
+#active-record download
+gem "activerecord"
+
+#sinatra download
+gem "sinatra-activerecord"
+
+#rake console n commands
+gem "rake"
+
 gem 'psych', '~> 4.0.0'
+
+#Require all files in a folder
+gem "require_all"
+
 gem 'uri'
 
-
-group :test do
-  gem 'rspec'
-  gem 'capybara'
-  gem 'rack-test'
-end  
+gem "faker"
 
 #use pry in the development phase only
 group :development do
