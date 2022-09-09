@@ -6,7 +6,7 @@ end
 
 use Rack::Cors do
   allow do
-    origins 'localhost:3000' #allow requests from all frontend origins(if you deploy your applications)
+    origins '*' #allow requests from all frontend origins(if you deploy your applications)
     resource '*', headers: :any, methods: [:get, :post, :delete, :put, :patch, :options, :head]
   end
 end
@@ -14,7 +14,3 @@ end
 use Rack::JSONBodyParser
 
 run ApplicationController
-use SessionsController
-use UsersController
-use GamesController
-use CommentsController
