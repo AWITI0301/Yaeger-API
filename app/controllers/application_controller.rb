@@ -1,16 +1,16 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
 
-  configure do
-    set :public_folder, 'public'
-    #set :views, 'app/views'
-    set :default_content_type, :json
-     set :session_secret, ENV["SESSION_SECRET"]
-  end
+  # configure do
+  #   set :public_folder, 'public'
+  #   #set :views, 'app/views'
+  #   set :default_content_type, :json
+  #    set :session_secret, ENV["SESSION_SECRET"]
+  # end
 
-  error ActiveRecord::RecordNotFound do
-    {errors: "Record not found with id #{params['id']}"}.to_json
-  end
+  # error ActiveRecord::RecordNotFound do
+  #   {errors: "Record not found with id #{params['id']}"}.to_json
+  # end
 
 
       # GET: /comments
