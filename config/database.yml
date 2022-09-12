@@ -4,4 +4,9 @@ development:
 
 production:
   adapter: postgresql
-  database: db/production.sqlite3
+  database: d5d6pn968g4voa
+  username: owfoyatdwqxhlj
+  Host: ec2-34-200-205-45.compute-1.amazonaws.com
+  password: 68f0a2a93f4e65d407f1d6b4669b3d11903da5ea6e6d0cad161f1367b95d4455
+
+

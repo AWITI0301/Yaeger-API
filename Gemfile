@@ -14,6 +14,7 @@ gem 'faker'
 gem 'rack-cors'
 gem 'rack-contrib'
 gem 'dotenv'
+gem 'pg'
 
 group :test do
   gem 'rspec'
